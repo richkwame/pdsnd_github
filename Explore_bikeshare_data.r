@@ -17,8 +17,8 @@ chi_summary <-
     group_by(User.Type)              %>% # grouping by 'user.type' column
     summarise(usertype_count = n())     # calculate the usertytpe count for each group
 ## 'chi_summary' now contains the summary data for each 'user.type'
-chi_summary
-ggplot(chi_summary, aes(User.Type, usertype_count)) +  
+chicago_summary
+ggplot(chicago_summary, aes(User.Type, usertype_count)) +  
     geom_bar(stat = 'identity')+  
 labs(y = 'total count for each usertype in chicago')
 labs(x = 'usertype')
@@ -27,7 +27,7 @@ ggtitle('Bar chart of total counts for each usertypes in Chicago')
 
 
 #Total count and graph for washington
-wash_summary <-
+washing_summary <-
     wash                          %>% # Pipe wash into group_by
     group_by(User.Type)              %>% # grouping by 'usertype' column
     summarise(usertype_count = n())     # calculate the usertype count for each group
@@ -43,12 +43,12 @@ ggtitle('Bar chart of total counts for each usertypes in Washington')
 
 
 #Total count and graph for New_york
-ny_summary <-
-    ny                          %>% # Pipe ny into group_by
+newy_summary <-
+    newy                          %>% # Pipe ny into group_by
     group_by(User.Type)              %>% # grouping by 'usertype' column
     summarise(usertype_count = n())     # calculate the usertype count for each group
 ## 'ny_summary' now contains the summary data for each 'usertype'
- ny_summary
+ newy_summary
 
 
 ggplot(ny_summary, aes(User.Type, usertype_count)) +  
