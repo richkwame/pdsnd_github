@@ -6,7 +6,7 @@ the project was created on 30th August 2021
 the README file was created on 23rd september 2021
 ### Project Title
 Replace the Project Title:
-INVESTIGATION OF BIKESHARE FOR THREE CITIES
+INVESTIGATION OF BIKESHARE RENTAL FOR THREE CITIES
 ### Description
 Describe what your project is about and what it does:
 the project is to use r programming techniques to analyze the bike renting pattern for three cities chicago,new york and washington
